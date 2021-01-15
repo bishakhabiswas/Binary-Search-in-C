@@ -1,8 +1,8 @@
 #include<stdio.h>
-binary_search(int A[],int n,int key)
+binary_search(int A[],int a,int key)
 {   int left ,right,mid;
    left = 0;
-   right = n-1;
+   right = a-1;
 
    while(left<=right)
    {
@@ -25,14 +25,14 @@ binary_search(int A[],int n,int key)
 {
 
 
-    int n;
+    int a;
     printf("Enter the number of element of array");
-    scanf("%d",&n);
-    int A[n];
+    scanf("%d",&a);
+    int A[a];
     int i;
      printf("Enter the elements of array\n");
 
-    for(i=0;i<n;i++)
+    for(i=0;i<a;i++)
     {
         scanf("%d",&A[i]);
     }
@@ -40,7 +40,7 @@ binary_search(int A[],int n,int key)
     printf("which number u want to search for:?");
     scanf("%d",&key);
 
-    int index = binary_search(A,n,key);
+    int index = binary_search(A,a,key);
 
     if(index== -1)
     {
